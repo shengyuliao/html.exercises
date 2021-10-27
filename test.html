@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+  
+<style>
+  .BG-gray-T-red::selection{
+	color: red;
+	background-color: gray;
+}
+input{
+  caret-color: #fa0;
+}
+input::selection{
+  color: #fa0;
+
+}
+  span{
+    -webkit-text-emphasis:'坑';
+    text-emphasis: '坑';
+  }
+span::selection{
+  -webkit-text-emphasis-color: red;
+  background-color: #ffa;
+}
+</style>
+
+<body>
+  <p>我沒有設定選與效果，色彩由瀏覽器內定</p>
+<p class="BG-gray-T-red">我選取狀態下色彩由我決定，背景變灰，文字變紅</p>
+
+
+<input type="text" name="" id="">
+
+
+<p>Amos 所撰寫與錄製的<span>金魚都能懂的 CSS 選取器</span>真是太棒了！這樣的好文應該用力給它訂閱下去啊，林貢丟無丟啊！！！</p>
+</body>
+</html>
