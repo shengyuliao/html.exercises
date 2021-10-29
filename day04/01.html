@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .flex{
+      width: 600px;
+      height: 600px;
+      background-color: #aaa;
+      margin: 50px auto;  
+      
+      display: flex;
+      flex-direction: row;
+      /* 控制主軸方向 */
+      flex-wrap: wrap ; 
+      /* justify-content: space-evenly; */
+      /* justify-content: space-around; */
+      /* justify-content: space-between; */
+      align-content: flex-start ;
+      /* 控制彈性列 是控制看不見的部份 */
+      align-items: center;
+      /* 控制子物件在彈性列的空間 */
+    }
+    .item{
+      width: 160px;
+      height: 160px;
+      background-color: #f00;
+      margin: 4px;
+      font-size: 50px;
+    }
+    .item:first-child{
+      height: 240px;
+    }
+
+    .item:last-child{
+      height: 220px;
+    }
+
+  </style>
+</head>
+<body>
+ <div class="flex">
+   <div class="item">1</div>
+   <div class="item">2</div>
+   <div class="item">3</div>
+   <div class="item">4</div>
+   <div class="item">5</div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.flex {
+  /* 父層屬性 */
+  display: flex;
+
+  flex-direction: ;/* 控制主軸方向 */ 
+  
+  flex-wrap: ; /* 控制主軸換行 */
+  
+  flex-flow: ;  /*flow等於上面兩個  */
+  
+/* ------------------------------------------------- */
+
+  justify-content: ; /* 控制主軸main-axis對齊  跟margin差不多概念 */
+
+  /* 次軸 交叉軸 */
+  align-content: ; /* content控制彈性列空間 */
+  align-items: ;  /* 控制子物件在彈性列的空間 */
+}  
+
+
+子層
+align-self:;  /*針對某個子物件作用*/
+
+order:; /*控制主軸上的排序 */
+
+margin:; /*也是操作空間*/
+
+flex-grow: ; /*伸展值.把剩餘空間分配給主軸上的指定物件 主軸是橫的 就增加寬度 是直的 就增加高度*/
+
+flex-shrink:;  /*收縮值.子物件如果寬度超過父層,也是作用於主軸 可指定收縮值 預設值為0(不收縮)*/
+
+flex-basis: ;  /*基本值.控制子物件在主軸中的長度 主軸哪個方向就是控制哪個方向  */
+flex:;     /*上面三個的縮寫 一定要注意 0 0 0px px一定要寫 */
+
+選取器 
+
+:first-child{} 
+:last-child{}
+:first-of-type{}
+:last-of-type{}
+
+:nth-child(){}
+:nth-last-of-type(){}
+:nth-of-type(){}
+:nth-last-of-type(){}

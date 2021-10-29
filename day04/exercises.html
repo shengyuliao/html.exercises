@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      .box{
+        width: 960px;
+        height: 800px;
+        border: 6px solid #fb0;
+        display: flex;
+        /* justify-content:flex-end;  */      
+        /*  上面這段code,資料流預設走向是由左至右,由上至下,父層設定走向
+          可用justify-content:flex-start或flex-end 或flex-center或center */
+        justify-content: space-between;
+          /*上面這段code 也可以用justify-content:space-around;資料對齊中間 justify-content:space-between 資料靠在兩邊  */
+          flex-wrap: wrap;
+          /* flex-wrap:wrap;可使父層的flex伸縮特性變成換行特性 */
+          flex-direction: row;
+          /* flex-direction: row;改變資料走向(上面是橫向)  */
+          align-content: center;
+          /* alige-content:flex-start */
+    }
+    .item{
+      width: 300px;
+      /* height: 100px; */
+      font-size: 16px;
+      margin-bottom: 10px;
+      /* margin-botton可產生物件間的距離 */
+      
+    }
+    .item:first-letter{
+      font-size: 30px;
+    }
+    /* :first-letter 的意思是資料中的第一個字 */
+    .item1{background-color: #faf;}
+    .item2{background-color: #0ff;}
+    .item3{background-color: #cac;}
+    .item4{background-color: #bfb;}
+    .item5{background-color: #a0a;}
+    .item6{background-color: #0f9;}
+  </style>
+
+</head>
+<body>
+  <div class="box">
+    <div class="item item1 ">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla consequuntur facere maxime libero dolor, ullam repellat eius illo repellendus nesciunt unde architecto. Ea, perferendis obcaecati illo itaque tenetur corrupti velit.</div>
+    <div class="item item2 ">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla consequuntur facere maxime liber</div>
+    <div class="item item3 ">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla consequuntur facere maxime libero dolor, ullam repellat eius illo repellendus nesciunt unde architecto. Ea, perferendis obcaecati illo itaque tenetur corrupti velit.</div>
+    <div class="item item4 ">4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla consequuntur facere maxime libero dolor, ullam repellat eius illo repellendus nesciunt unde architecto. Ea, perferendis obcaecati illo itaque tenetur corrupti velit.</div>
+    <div class="item item5 ">5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla consequuntur facere maxime libero dolor, ullam repellat eius illo repellendus nesciunt unde architecto. Ea, perferendis obcaecati illo itaque tenetur corrupti velit.</div>
+    <div class="item item6 ">6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla consequuntur facere maxime libero dolor, ullam repellat eius illo repellendus nesciunt unde architecto. Ea, perferendis obcaecati illo itaque tenetur corrupti velit.</div>
+  </div>
+
+</body>
+</html>
