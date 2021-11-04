@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    .item{
+      width: 300px;
+      position: relative;
+      
+    }
+    .flag{
+      position: absolute;
+      top: ;
+      right: 0%;
+      width: 40px;
+      height: 40px;
+      background-color: #fa0;
+      color: #f00;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    .flag:after{
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      border-left: 20px solid #fa0;
+      border-right: 20px solid #fa0;
+      border-bottom:10px solid transparent ;
+    }
+  </style>
+</head>
+<body>
+  <div class="item">
+    <div class="flag">8折</div>
+    <img src="https://picsum.photos/300/200/?random=1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque excepturi nostrum quae itaque, voluptas dignissimos saepe architecto tenetur neque, natus accusantium ratione voluptatem molestias eveniet? Dignissimos incidunt quam repellat?</p>
+  </div>
+</body>
+</html>
