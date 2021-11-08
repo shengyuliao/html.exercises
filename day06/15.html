@@ -12,7 +12,7 @@
       position: relative;
       width: 960px;
       /* background-color: #fa0; */
-    }
+    } 
     .pic_item img{
       padding-top: 200px;
       width: 650px;
@@ -21,6 +21,14 @@
       margin-left:300px; 
       position: relative;
       /* background-color: #fa0; */
+    }
+    .pic_item_b img{
+      padding-top: 150px;
+      width: 650px;
+      height: 400px;
+      display: inline-block;
+      position: relative;
+      left: 100px;
     }
  
     .title{
@@ -35,24 +43,55 @@
       text-align: center;
       letter-spacing: 3px;
     }  
+    .title_b{
+      width: 300px;
+      font-size: 25px;
+      position: relative;
+      background-color:#c00;
+      bottom: 557px;
+      text-align: center;
+      letter-spacing: 3px;
+      left: 500px;
+      color: white;
+    }
     
     .title .aaa::before{
       display: inline-block;
       content: "01";
+      /* letter-spacing: 1px; */
       writing-mode: vertical-lr;
       text-orientation: sideways-right;
       font-size: 70px;
       bottom: 10px;
+      text-decoration: none;
       /* background-color: #fa0; */
-      
+      position: relative;
+      top: 20px;
+    }
+    
+    .title_b .bbb::after{
+      display: inline-block;
+      content: "02";
+      /* letter-spacing: 1px; */
+      writing-mode: vertical-lr;
+      text-orientation: sideways-right;
+      font-size: 70px;
+      /* bottom: 10px; */
+      text-decoration: none;
+      /* background-color: #fa0; */
+      /* position: relative; */
+      /* top: 20px; */
+      /* right: 30px; */
     }
     .title h2{
       color:white;
       display: inline-block;
-    }
-   
-
-
+      /* background-color: #fa0; */
+      font-size: 50px;
+      margin: auto;
+      margin-right: 15px;  
+    } 
+    
     
     .title_txt{
       color: rgb(200, 208, 208);
@@ -76,26 +115,45 @@
     }
     .list{
       width: 800px;
-      left: 300px;
+      left: 200px;
       /* top: 0px; */
       background-color: rgba(241, 241, 241, 0.993);
       position: absolute;
       /* bottom: 100px; */
-      
     }
+    .list_b{
+      width: 650px;
+      left: 350px;
+      background-color: rgba(241, 241, 241, 0.993);
+      position: relative;
+      bottom: 40px;
+    }
+  
+    .listbox{
+      padding-top: 5px;
+      padding-left: 40px;
+      padding-bottom: 5px;
+    }
+    .listbox_b{
+      position: relative;
+      left: 30px;
+    }
+    .listbox_b p{
+      width: 100px;
+      background-color:#000;
+      color: white;
+      text-align:center ;
+      border-radius: 5%;
+      margin: 5px 5px;
+    }
+
     .solgan{
       /* background-color: #fa0; */
       padding-top: 15px;
       padding-left: 15px;
       color: red;
       font-weight: bold;
-    }
-    .listbox{
-      padding-top: 5px;
-      padding-left: 40px;
-      padding-bottom: 5px;
-      
-      
+     
     }
     .solgan::after{
       display: inline-block;
@@ -117,16 +175,25 @@
       border-radius: 5%;
       margin: 5px 5px;
     }  
+  .box_b{
+    position: relative;
+    top: 350px;
+    left: 50px;
+    /* bottom: 100px; */
+  }
+  .list_b{
+    position: relative;
+    bottom: 400px;
+  }
     
   </style>
 </head>
 <body>
 
   <div class="box">
-    <div class="pic_item">
-      
+    <div class="pic_item">     
       <img src="/pic/scar.png" alt="">
-      <div class="title">
+      <div class="title"> 
         <h2 class="aaa">操控樂趣</h2>
           <div class="title_txt">
             <h4>人人滿意的駕駛體驗</h4>
@@ -135,8 +202,7 @@
             </p>
           </div>          
       </div> 
-  </div>
-    
+  </div> 
         <div class="list">
           <div class="solgan">因為我們做了這些革新</div>
           <div class="listbox"><p>低重心設計</p>
@@ -153,5 +219,36 @@
     </div>
     
   </div>
+  <div class="box_b">
+    <div class="pic_item_b">
+      <img src="/pic/car.jfif" alt="">
+      <div class="title_b"> 
+        <h2 class="bbb">安全守護</h2>
+          <div class="title_txt">
+            <h4>行車更安心的高剛性車體</h4>
+            <p>
+              您的愛車會妥善保護您，強悍穩固的車身可使您安全無虞。世界級的安全功能讓您輕鬆自如享受旅程、毫無後顧之憂。
+
+            </p>
+          </div>          
+      </div> 
+  </div>
+    
+        <div class="list_b">
+          <div class="solgan">因為我們做了這些革新</div>
+          <div class="listbox_b"><p>主動安全</p>
+            <li class="listbox_li">透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾，保持高速行駛穩定度。</li>
+          </div>
+          <div class="listbox_b"><p>被動安全</p>
+            <li class="listbox_li">車身結構採用超高強度鋼材，提高車輛穩定性，同時藉由雷射強化焊接技術，大幅增加焊點數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。</li>
+          </div>
+      
+        </div>
+      
+    </div>
+    
+  </div>
+
+
 </body>
 </html>
