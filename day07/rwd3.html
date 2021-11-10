@@ -18,6 +18,17 @@
     .item img{
       width: 100%;
     }
+
+    @media screen and (min-width:768px) {
+      .wrap{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .item{
+        width: calc(50%-20px);
+        margin:20px;
+      }
+    }
   </style>
 </head>
 <body>
