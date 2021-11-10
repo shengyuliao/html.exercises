@@ -21,14 +21,27 @@
 
     @media screen and (min-width:768px) {
       .wrap{
+        max-width: 1200px;
         display: flex;
         flex-wrap: wrap;
+        margin: auto;
       }
       .item{
-        width: calc(50%-20px);
-        margin:20px;
+        width: calc(50% - 20px);   
       }
     }
+    
+    @media screen and (min-width:1024px) {
+      .item{
+        width: calc(33.33333% - 20px);   
+      }
+    }
+    @media screen and (min-width:1200px) {
+      .item{
+        width: calc(16.666666% - 20px);   
+      }
+    }
+
   </style>
 </head>
 <body>

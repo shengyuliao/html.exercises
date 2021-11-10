@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/reset.css">
+  <style>
+    
+    .item{
+      margin: 10px;
+
+    }
+    .item img{
+      width: 100%;
+      vertical-align: top;
+    }
+  
+    .txt{
+      background-color: #fa0;
+      min-height: 100px;
+      font-size: 100px;
+    }
+    @media screen and (min-width: 768px) {
+      .wrap{
+        max-width: 1200px;
+        display: flex;
+        
+      }
+      .main-col:first-child{
+        width: 66.666666%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .main-col:last-child{
+				width: 33.333333%;
+			}
+
+      .main-col:first-child .txt{
+        width: calc(66.666666% - 20px);
+      }
+      .main-col:first-child .pic{
+        width: calc(33.333333% - 20px);
+      }
+    }
+      .main-col:first-child .item:nth-of-type(3){
+        order: 1;
+      }
+
+      .main-col:nth-child(2) .item{
+        height: calc(100% - 20px);
+      }
+  </style>
+</head>
+
+
+
+
+<body>
+
+
+  <div class="wrap">
+
+    <div class="main-col">
+      <div class="item txt">txt 1</div>
+      <div class="item pic">
+        <img src="https://picsum.photos/300/300/?random=1">
+      </div>
+      <div class="item txt">txt 2</div>
+      <div class="item pic">
+        <img src="https://picsum.photos/300/300/?random=3">
+      </div>
+
+    </div>
+    <div class="main-col">
+      <div class="item txt">txt 3</div>
+    </div>
+  </div>
+</body>
+</html>
